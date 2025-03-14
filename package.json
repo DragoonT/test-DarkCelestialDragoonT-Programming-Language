@@ -1,0 +1,53 @@
+{
+  "name": "dcdt",
+  "displayName": ".dcdt",
+  "description": "DarkCelestialDragoonT",
+  "version": "0.0.3",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "dcdt",
+        "aliases": [
+          "DarkCelestialDragoonT",
+          "dcdt"
+        ],
+        "extensions": [
+          "DarkCelestial DragoonT Language"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "dcdt",
+        "scopeName": "source.dcdt",
+        "path": "syntaxes/dcdt.tmLanguage.json"
+      }
+    ],
+    "icon": {
+      "light": "icons/celestial_32x32.png",
+      "dark": "icons/dark_celestial_32x32.png"
+    }
+  },
+  "main": "dragoont.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "dragoont": "dragoont.js"
+  },
+  "pkg": {
+    "targets": [
+      "node18-win-x64"
+    ]
+  }
+}
